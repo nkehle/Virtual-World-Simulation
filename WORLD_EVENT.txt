@@ -1,0 +1,35 @@
+Noa Kehle
+Project 5
+12/07/2022
+
+1. How to trigger the event
+    When you click with the mouse on a space in the map
+
+2. What should happen when the event is triggered
+    A flaming meteor object appears on the point clicked. Around it the background changes
+    to a black/burnt looking ash. If there is an entity at the point clicked, the meteor replaces it.
+    If it is the first time pressing a key then, the nearest dudenotfull becomes a wizard entity and
+    the nearest fairy becomes a heart entity.
+
+3.What the new entity is and how it should behave
+    I added two new entities. The first is a WIZARD entity that is a movable and uses a*star pathing and moves around
+    the map at to random points and spawns a "superdude" which is a different appearing dudenotfull who has essentially
+    no limit to the amount of trees he can cut ie. very large resourceLimit. The second entity I added is a HEART
+    entity which is a MOVABLE and zooms around the map and plants sapling to try and counteract the wizard making the superdudes.
+
+    The fun part is that the number of Hearts grows at somewhat of an exponential rate. For every 10 trees that a heart plants, it
+    divides itself and becomes 2 heart entities.
+
+    On the other side, the wizard is making superdudes at a constant rate, thus making it a competition of the forest and the dudes.
+
+3. What the affected entities should do
+   The affected entities are the nearest dude and the nearest fairy relevant to the where you click and place the meteor.
+   The dude transforms into the wizard that supports team dude, and the fairy becomes a heart that is on team forest.
+
+5. (If applicable) the names of each partner and what each partner was responsible for
+    N/A
+
+
+    Design Tradeoffs:
+        One design tradeoff I found was having the initial event things start from VirtualWorld.java, and the moving the control
+        as much as possible to simply the entities, and having things in their respective places.

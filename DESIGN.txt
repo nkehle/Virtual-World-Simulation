@@ -1,0 +1,20 @@
+Noa Kehle
+CSC 203-17
+10/07/22
+
+Design Choices:
+
+For starters, I chose to have a lot of methods in the entity class,
+as for there are many instances where lots of data about the entity is used.
+Multiple of the fields had to remain public due to being used in so many different locations,
+but having a majority of the methods inside the class helped with cleanliness and flow
+of calling things upon an "entity". Secondly a big design choice that i made a large mistake on in my first
+attempt was not having the right things in the class VirtualWorld. I found that to be very useful in
+adding all the methods and fields that were used in actually placing objects and other
+things inside that "world". For example a big design choice i made was having the createObject methods be
+located in both the entity class and the virtual world-class so that there wasn't unnecessary
+pinch points when it came to using certain things when virtual-world was running. For action, i chose
+to keep it relatively clean with only a few methods due to its data not being super relevant, as well as
+point, imageStore, viewport, and eventScheduler. I would like to as we continue this project adjust certain methods
+into different positions as I see fit for efficiency and sticking to the object-oriented implementation
+of the codebase.
